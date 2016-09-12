@@ -1,0 +1,17 @@
+<?php
+return [
+    // Nexmo Credentials
+    'nexmo_key' => 'KEY',
+    'nexmo_secret' => 'SECRET',
+
+    //Internet accessible URL for the demo (Nexmo will make a request when a call is received).
+    'base_path' => 'http://example.com',
+
+    //Oders Database
+    'database' => [
+        ['id' , 'number',     'date',                     'status',      'total' ],
+        ['321', '14845551212', new DateTime('-1 week'),   'shipped',     '$144.89'],
+        ['121', '14845552441', new DateTime('yesterday'), 'backordered', '$144.89'],
+        ['423', '14845551212', new DateTime('today'),     'pending',     '$144.89'],
+    ]
+];
