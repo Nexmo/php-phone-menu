@@ -1,9 +1,9 @@
 <?php
-
-
 namespace NexmoDemo;
 
-
+/**
+ * Convert value objects into spoken words.
+ */
 trait TalkTrait
 {
     protected function talkStatus($status)

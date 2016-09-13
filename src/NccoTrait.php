@@ -1,9 +1,9 @@
 <?php
-
-
 namespace NexmoDemo;
 
-
+/**
+ * Simple container for NCCO stack.
+ */
 trait NccoTrait
 {
     /**

@@ -1,9 +1,9 @@
 <?php
-
-
 namespace NexmoDemo;
 
-
+/**
+ * Separates the interface (prompts / text) from the logic of the menu.
+ */
 trait TemplateTrait
 {
     protected function sayHello()
