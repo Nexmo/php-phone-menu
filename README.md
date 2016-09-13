@@ -19,26 +19,12 @@ You will need:
 git clone https://github.com/nexmo/php-phone-menu.git
 ```
 
-## Setup (Composer)
+## Configuration
 
-Use composer to install the dependencies (the [Nexmo PHP Client Library][php-lib])
+Copy `config.php.dist` to `config.php`, and add public URL Nexmo can use to access the application. If you're using 
+[ngrok][ngrok] you'll need to know what subdomain will be used to expose your application.  
 
-```sh
-cd ./php-phone-menu
-composer install
-```
-
-Once installed, copy `config.php.dist` to `config.php`, and edit with your Nexmo credentials, as well as the public URL
-Nexmo can use to access the application. If you're using [ngrok][ngrok] you'll need to know what subdomain will be used
-to expose your application. 
- 
-Finally, run the setup script to provision a new application and virtual number:
-
-```sh
-php ./bin/setup.php
-```
-
-## Setup (Nexmo CLI)
+## Setup (Using Nexmo CLI)
 
 Create the nexmo application, using the [Nexmo CLI][cli] and take note of the application universally unique identifier (UUID):
 
