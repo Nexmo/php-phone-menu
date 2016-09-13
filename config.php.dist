@@ -1,9 +1,5 @@
 <?php
 return [
-    // Nexmo Credentials
-    'nexmo_key' => 'KEY',
-    'nexmo_secret' => 'SECRET',
-
     //Internet accessible URL for the demo (Nexmo will make a request when a call is received).
     'base_path' => 'http://example.com',
 ];
