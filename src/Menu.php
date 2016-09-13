@@ -36,7 +36,7 @@ class Menu
         $this->promptSearch();
     }
 
-    protected function searchAction()
+    public function searchAction($request)
     {
         if(isset($request['dtmf'])) {
             $dates = [new \DateTime('yesterday'), new \DateTime('today'), new \DateTime('last week')];
