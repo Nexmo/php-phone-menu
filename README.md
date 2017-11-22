@@ -32,14 +32,6 @@ Create the nexmo application, using the [Nexmo CLI][cli] and take note of the ap
 nexmo app:create demo-app --keyfile private.key http://example.com http://example.com
 ```
 
-Rename the config file:
-
-```sh
-mv example.env .env
-```
-
-Fill in the values in `.env` as appropriate.
-
 Buy numbers for calls that you would like to track. The following example buys the first available number in a given country by country code.
 
 ```sh
@@ -77,8 +69,8 @@ Or you can configure a webserver to serve the app using `/public` as the webroot
 
 ### Using the App
 
-Call the virtual number to check order status over the phone. Find the order ids in `config.php`. Update `config.php` 
-with your phone number to have the application lookup a recent order based on your caller id.
+Call the virtual number to check order status over the phone. You can enter any
+order ID as the system chooses a random status.
 
 [php-lib]: https://github.com/Nexmo/nexmo-php
 [ngrok]: https://ngrok.com/
