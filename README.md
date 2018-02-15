@@ -10,13 +10,16 @@ This app uses the Nexmo Voice API to demonstrate an interactive order status pho
 You will need:
 
 * At least one Nexmo Virtual Number (Phone Number)
-* `composer` or the [Nexmo CLI][cli] installed
+* [composer](http://getcomposer.org/) installed
+* The [Nexmo CLI][cli] installed
 * A public web server to host this web app, or [ngrok][ngrok] on your local development system.
 
 ## Installation
 
 ```sh
 git clone https://github.com/nexmo/php-phone-menu.git
+cd php-phone-menu
+composer install
 ```
 
 ## Configuration
